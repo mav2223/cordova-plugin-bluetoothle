@@ -2755,12 +2755,12 @@ public class BluetoothLePlugin extends CordovaPlugin {
       return;
     }
     
-    String address = getAddress(obj);
+    final String address = getAddress(obj);
     if (isNotAddress(address, callbackContext)) {
       return;
     }
 
-    String pin = getPin(obj);
+    final String pin = getPin(obj);
     if (pin==null) {
       return;
     }
